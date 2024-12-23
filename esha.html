@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort Ten words</title>
+    <script>
+        words = new Array (10);
+        for (k = 0; k < words.length ; k = k+1){
+            words[ k] = window.prompt( "Enter words #" + k,"");
+        }
+        document.write("UNSORTED WORDS :"+ "<BR>");
+            for (k = 0; k < words.length ; k = k+1){
+                document.write(words[k]+"<BR>");
+            }
+            words.sort();
+            document.write("SORTED WORDS :"+ "<BR>");
+                for (k = 0; k < words.length; k = k+1){
+                    document.write(words[k]+"<BR>");
+                     }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
